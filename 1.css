@@ -1,0 +1,88 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background:black;
+    font-family: sans-serif ;
+  }
+  canvas {
+    display: block;
+  }
+
+  .a {
+    color:rgb(130, 174, 255);
+    transition: 0.5 s;
+    font-size:1em;　　
+  }
+
+  .a:hover {
+    color: rgb(131, 218, 32);
+  }
+
+  .a:visited {
+    color: rgb(228, 47, 23);
+  }
+
+  .b:hover{
+      background-color: #4CAF50; /* Green */
+      color: white;
+  }
+  
+  /* #pic {
+    display: none;
+  } */
+  #resultimg{
+    display:none;
+    position:absolute; 
+    left:400px;
+    top:100px;
+  }
+  #bg{
+    display:none;
+  }
+
+  dl dd{
+    margin:0.6em 0;
+  }
+  #page1{
+      width:400px;
+      margin:0 auto;
+
+  }
+  #page2{
+    width:400px;
+      margin:0 auto;
+  }
+
+  #page3{
+    width:400px;
+      margin:0 auto;
+  }
+
+  .bg{
+    width:690px;
+      margin:0 auto;
+  }
+
+  .q1{
+    color:rgb(89, 106, 255);
+    font-size:1em;　　
+  }
+  .q2{
+    color:rgb(89, 106, 255);
+    font-size:1em;　　
+  }
+  
+  .q3{
+    color:rgb(89, 106, 255);
+    font-size:1em;　　
+  }
+
+  #title{
+    position: absolute;
+    left:350px;
+    top:30px;
+    margin:0 auto;
+  }
+
+
+

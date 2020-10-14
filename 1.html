@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+　　
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+<html lang="en">
+
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="1.css">
+  <meta charset="utf-8" />
+
+</head>
+<style>
+ .active{
+   color:red;
+ }
+
+</style>
+
+<body>
+<div><img src="title.png" id='title' width="550px" /> 
+</div>
+
+
+
+  <div id="page1">
+    <dl class="q1">
+      <dt id="q1a"><br><br><br><br><br><br><br><br>You wake up on a small boat in the middle of a lake. <br>You look down over the edge of the boat, what do you see?
+      </dt>
+      <dd id="q1a1" class="a" onclick="q1reVa1()"> <br>• a fish swimming in the water below</dd>
+      <dd id="q1a2" class="a" onclick="q1reVa2()">• reflection of the sky diluted by waves on the surface of the lake</dd>
+      <dd id="q1a3" class="a" onclick="q1reVa3()">• your own silhouette</dd>
+    </dl>
+
+    <dl class="q2">
+      <dt id="q2a"><br><br><br>You are woken by a scream in the middle of the night, someone in your neighbourhood has stubbed their toe hard against a table in the dark again, this always happens in your neighbourhood. What do you do about the noise?
+      </dt>
+      <dd id="q2a1" class="a" onclick="q2reVa1()"> <br>• Yell out the window for whoever stubbed their toe to shut up</dd>
+      <dd id="q2a2" class="a" onclick="q2reVa2()">• Try to go back to sleep</dd>
+      <dd id="q2a3" class="a" onclick="q2reVa3()">• I am the person who stubbed my toe</dd>
+    </dl>
+
+    <dl class="q3">
+      <dt id="q3a"><br><br><br>Your significant other gives you a present for your anniversary.The present is a large box. You open the box and find a smaller box inside, you open the smaller box and find another box inside. You keep unwrapping the present only to continue finding smaller boxes inside.<br>React to this:
+      </dt>
+      <dd id="q3a1" class="a" onclick="q3reVa1()"> <br>• I am upset at my significant other</dd>
+      <dd id="q3a2" class="a" onclick="q3reVa2()">• Maybe this is a joke before they show me the real gift</dd>
+      <dd id="q3a3" class="a" onclick="q3reVa3()">• The process of opening boxes is a gift in itself, I am so grateful</dd>
+    </dl>
+  </div>
+  
+  <div id="page2">
+  <button id="q1b" class="b" onclick="removeQ()" style=" font-size: 16px;border-radius: 2px;color:rgb(78,134,255);border:3px rgb(78, 134, 255) double; background-color:black"；padding: 15px 32px;>NEXT</button>
+  </div>
+
+  <script>
+    function removeQ() {document.getElementById("page1").style.display = 'none';
+
+      document.getElementById("pic").style.display = 'block';
+
+      document.getElementById("q1b").style.display = 'none';
+      
+      // document.getElementById("bg").style.display = 'block';  
+
+      document.getElementById("resultimg").style.display = 'block';                    
+      callpic();
+
+    }
+  </script>
+
+
+  <p id="pic"> <br> </p>
+
+   
+  <div id="page3">
+  <!-- <img src="background.jpg" id='bg' width="690px" height="1000px"/>  -->
+  <img src="" id='resultimg' width="500px" height="500px" margin-top:300px/> 
+  </div>
+
+  <script src="1.js"></script>
+
+</body>
+
+</html>
