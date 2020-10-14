@@ -75,7 +75,13 @@ function q2reVa1() {
   i2 = 1;
     value=[i1,i2,i3];
   console.log(value);
+
+  document.getElementById("q2a1").className = "a active";
+  document.getElementById("q2a2").className = "a";
+  document.getElementById("q2a3").className = "a ";
+
   return i2;
+
 }
 
 function q2reVa2() {
@@ -92,6 +98,9 @@ function q2reVa3() {
   i2 = 3;
     value=[i1,i2,i3];
   console.log(value);
+  document.getElementById("q2a1").className = "a ";
+  document.getElementById("q2a2").className = "a";
+  document.getElementById("q2a3").className = "a active";
   return i2;
 }
 
@@ -103,6 +112,9 @@ function q3reVa1() {
   i3 = 1;
     value=[i1,i2,i3];
   console.log(value);
+  document.getElementById("q3a1").className = "a active ";
+  document.getElementById("q3a2").className = "a";
+  document.getElementById("q3a3").className = "a ";
   return i3;
 }
 
@@ -110,12 +122,18 @@ function q3reVa2() {
   i3 = 2;
     value=[i1,i2,i3];
   console.log(value);
+  document.getElementById("q3a1").className = "a ";
+  document.getElementById("q3a2").className = "a active";
+  document.getElementById("q3a3").className = "a ";
   return i3;
 }
 
 function q3reVa3() {
   i3 = 3;
   console.log(value);
+  document.getElementById("q3a1").className = "a ";
+  document.getElementById("q3a2").className = "a ";
+  document.getElementById("q3a3").className = "a active";
   return i3;
 }
 
